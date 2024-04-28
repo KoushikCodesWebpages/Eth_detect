@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    background-image: url("img/gif_eth.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Set body height to 100% of viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    z-index: 1;
+}
+
+/* Center the .TEXT div */
+.TEXT {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    max-width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 10px;
+}
+
+
+p {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    z-index: 1;
+}
+
+/* styles.css */
+
+.background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background: url("giphy (1).gif") center/cover no-repeat;
+    overflow: hidden;
+}
+
+.background-video-container h1,
+.background-video-container p {
+    color: #fff; /* Set text color for better visibility on the background */
+    text-align: center;
+    position: relative;
+     /* Ensure text is on top of the video */
+}
+
+.background-video-container::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay to enhance text readability */
+    z-index: 0; /* Behind the text */
+}
+
+
+/* Form Page Styles */
+/* Form Styles */
+.form {
+        z-index: 1;
+}
+form {
+    margin-top: 30px;
+    max-width: 400px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+    font-size: 18px;
+    display: block; /* Display labels in a block format */
+    margin-bottom: 5px; /* Add some space below each label */
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Add spacing between input fields */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Result Page Styles */
+p {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* Fancy Button Styles */
+.button {
+    padding: 12px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005f6b;
+}

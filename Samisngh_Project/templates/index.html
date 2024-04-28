@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Cryptocurrency Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index_styles.css') }}">
+</head>
+<body>
+    <div class="background-video-container">
+        <div class="TEXT">
+            <h1>Ethereum Cryptocurrency Fraud Detection</h1>
+            <div class="formdata">
+                <form action="/output" method="post">
+                    <label for="address">Enter Ethereum Address:</label><br>
+                    <input type="text" id="address" name="address"><br><br>
+                    <input type="submit" value="Predict" class="button">
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

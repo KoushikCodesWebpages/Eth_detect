@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output_styles.css') }}">
+</head>
+<body class="{{ css_class }}">
+    <h1 class="prediction-header">Prediction Result</h1>
+    <p class="prediction-text">{{ prediction }}</p>
+
+    {% if prediction == "Non-Fraudulent" %}
+        <img src="{{ url_for('static', filename='green_image.png') }}" alt="Green Image" class="result-image">
+    {% elif prediction == "Fraudulent" %}
+        <img src="{{ url_for('static', filename='red_image.png') }}" alt="Red Image" class="result-image">
+    {% endif %}
+
+    
+    <a href="{{ url_for('index') }}" class="back-button">Back to Home</a>
+
+    <div class="graphs">
+        <img class="imge"src="{{ url_for('static', filename='img/pie_chart.png') }}" alt="Image 1">
+        <div></div>
+        <img class="imge" src="{{ url_for('static', filename='img/heatmap.png') }}" alt="Image 2">
+    </div>
+
+</body>
+</html>
+

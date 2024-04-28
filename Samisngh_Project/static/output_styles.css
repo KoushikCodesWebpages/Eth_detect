@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    background-image: url("img/giphy.gif");
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Set body height to 100% of viewport height */
+
+}
+
+
+.imge {
+    max-width: 50%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally within its container */
+    border-radius: 5px; /* Add rounded corners to the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    margin-top: 240px; /* Adjust margin top */
+    margin-bottom: 50px; /* Adjust margin bottom */
+}
+
+.graphs {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between; /* Distribute items along main-axis */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Set height of the flex container */
+    margin-top: 250px; /* Adjust margin top */
+    margin-bottom: 50px; /* Adjust margin bottom */
+}
+
+
+.prediction-header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.prediction-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result-image {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+/* Styles based on prediction */
+body.non-fraudulent {
+    background-color: #6eff7a; /* Greenish background */
+}
+
+body.fraudulent {
+    background-color: #ff6b6b; /* Red background */
+}
+
+/* Styles for the back button */
+.back-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 66, 66, 0.986);
+    border-radius: 10px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
