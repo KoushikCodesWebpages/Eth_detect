@@ -9,6 +9,11 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 
+
+#install requirements using,
+ 
+#pip install flask pandas scikit-learn
+
 app = Flask(__name__)
 
 # Load the dataset
